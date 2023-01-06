@@ -888,6 +888,21 @@ title {
 
 
 @media screen and (max-width: 767px) {
+
+ .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+ }
+
+  .site-nav {
+    display: none;
+  }
+
+  .mail-tel {
+    display: none;
+  }
+
+
   .hero {
     padding-top: 112px;
   padding-bottom: 112px;
