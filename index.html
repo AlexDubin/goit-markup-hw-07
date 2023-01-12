@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Document</title>
 
     <style>
@@ -34,6 +34,99 @@
           </li>
           <li class="item"><a href="tel:+110001111111" class="tel">+11 (000) 111-11-11</a></li>
         </ul>
+
+        <!-- Mobile menu button -->
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="32"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 32 22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+
+            <path
+              fill-rule="evenodd"
+              d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" 
+              stroke="#2E2F42" 
+              stroke-width="3" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+      
+
+        <!-- Mobile menu -->
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+
+
+          <button type="button" class="modal-btn-open js-close-menu" >
+          <svg class="icon-svg-open" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+
+  
+
+          
+
+          <ul class="mobile-menu list">
+            <li class="item-mobile"><a href="./index.html" class="link-mobile current">Studio</a></li>
+            <li class="item-mobile"><a href="./portfolio.html" class="link-mobile" >Portfolio</a></li>
+            <li class="item-mobile"><a href="" class="link-mobile" >Contacts</a></li>
+          </ul>
+
+          <ul class="mail-tel-mobile list">
+            <li class="item"><a href="tel:+110001111111" class="tel-mobile">+11 (000) 111-11-11</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="mail-mobile">info@devstudio.com</a>
+          </li>
+          
+        </ul>
+
+        <ul class="sosial-list-end-mobile list">
+            <li class="social-end-mobile">
+              <a href="" class="social-links-end-mobile">
+                <svg class="team-icons-end">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-end-mobile">
+              <a href="" class="social-links-end-mobile">
+                <svg class="team-icons-end">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-end-mobile">
+              <a href="" class="social-links-end-mobile">
+                <svg class="team-icons-end">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-end-mobile">
+              <a href="" class="social-links-end-mobile">
+                <svg class="team-icons-end">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+
+        
       </div>
     </header>
 
@@ -382,7 +475,8 @@
             <h3 class="title end-title">Subscribe</h3>
             <div class="subscribe-container">
               <input class="sub-input" type="email" name="email" placeholder="E-mail" />
-              <button type="submit" class="sub-end-btn">Subscribe
+              <button type="submit" class="sub-end-btn">
+                Subscribe
                 <svg width="24px" height="24px">
                   <use href="./images/icons.svg#icon-send-end"></use>
                 </svg>
@@ -403,7 +497,7 @@
           </svg>
         </button>
 
-        <p class="title form-title">Leave your contacts and we will call you back</p>
+        <p class="form-title">Leave your contacts and we will call you back</p>
 
         <form class="form">
           <div class="form-field">
@@ -444,7 +538,6 @@
           </div>
 
           <label class="form-policy">
-
             <input
               class="checkbox"
               type="checkbox"
@@ -454,23 +547,26 @@
             />
 
             <span class="icon-clik">
-
               <svg class="icon-clik-svg" width="16px" height="16px">
                 <use href="./images/icons.svg#icon-click"></use>
               </svg>
-
             </span>
 
-            I accept the terms and conditions of the  <a href="" class="link-policy"> Privacy Policy</a>
+            I accept the terms and conditions of the
+            <a href="" class="link-policy"> Privacy Policy</a>
           </label>
 
           <button type="submit" class="form-send-btn">Send</button>
-
         </form>
-
-        
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
   </body>
 </html>
