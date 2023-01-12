@@ -913,8 +913,8 @@ textarea:focus-visible {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   padding: 40px;
   background-color: var(--hero-text-color);
   z-index: 999;
@@ -927,12 +927,7 @@ textarea:focus-visible {
   transform: translateY(0);
 }
 
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: rgb(218, 31, 31);
-}
+
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
@@ -1622,6 +1617,13 @@ title {
 }
 
 
+
+
+.container {
+  min-width: 320px;
+  max-width: 1170px;
+
+}
 
 
 
