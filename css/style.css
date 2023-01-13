@@ -914,10 +914,12 @@ textarea:focus-visible {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 40px;
   background-color: var(--hero-text-color);
-  z-index: 999;
+
+  overflow: auto;
+  
 
   transform: translateY(-100%);
   transition: transform 250ms ease-in-out;
@@ -932,6 +934,7 @@ textarea:focus-visible {
 }
 
 .menu-container.is-open {
+  
   display: block;
   transform: translateY(0);
   
