@@ -921,10 +921,21 @@ textarea:focus-visible {
 
   transform: translateY(-100%);
   transition: transform 250ms ease-in-out;
+  pointer-events: none;
+
+  display: none;
+
+  /* opacity: 0;
+
+  transition: transform var(--time-animation) var(--cubic-bezier), 
+  opacity var(--time-animation) var(--cubic-bezier); */
 }
 
 .menu-container.is-open {
+  display: block;
   transform: translateY(0);
+  
+  pointer-events: auto;
 }
 
 
