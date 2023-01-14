@@ -1907,6 +1907,16 @@ title {
   padding-top: 48px;
 }
 
+.cards-text-actions {
+  display: none;
+}
+
+
+
+.container-img::before {
+  display: none;
+}
+
 }
 
 
